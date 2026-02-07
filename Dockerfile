@@ -23,7 +23,7 @@ RUN mkdir /CLIProxyAPI
 COPY --from=builder ./app/CLIProxyAPI /CLIProxyAPI/CLIProxyAPI
 
 COPY config.yaml /CLIProxyAPI/config.yaml
-COPY auth-dir /root/.cli-proxy-api
+COPY auths /root/.cli-proxy-api
 
 WORKDIR /CLIProxyAPI
 
